@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+.header {
+  height: 120px;
+  border-bottom: 2px solid;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+.logo {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  display: inline-block;
+  font-size: 80px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.name {
+  color: white;
+  word-break: break-all;
+  display: inline-block;
+  font-size: 35px;
+  font-family: 'Cinzel', serif;
+  margin-left: 20px;
+}
+
+.saying {
+  color: white;
+  line-height: 12px;
+  margin-left: 35px;
+  font-size: 10px;
+  width: 300px;
+}
