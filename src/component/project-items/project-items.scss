@@ -2,16 +2,22 @@
 
 
 .about-project {
-  margin-left: 330px;
-  margin-right: 10px;
+  line-height: 16px;
+  height: 330px;
+  flex-grow: 100;
+  display: inline-block;
+  width: 33%;
+  margin: 10px;
   border: 3px solid #73AD21;
 }
 
 .project {
+  display: flex;
+  flex-flow: wrap;
   width: 90%;
   margin-bottom: 40px;
   border: 2px solid green;
-  height: 320px;
+  height: 460px;
   background-color: white;
   transition: 350ms;
   position: relative;
@@ -45,35 +51,21 @@
 }
 
 .title {
-  font-size: 22px;
-  margin: 10px;
-}
-
-.gif {
-  width: 300px;
-  height: 250px;
+  height: 0px;
+  width: 100%;
+  font-size: 30px;
+  margin: 10px 0px 0px 10px;
 }
 
 .image {
-  position: absolute;
+  flex-wrap: wrap;
+  width: 525px;
+  height: 375px;
+  float: left;
+  margin: 10px 10px 0px 20px;
   box-shadow: 1px 2px 9px 1px #afabab;
-  bottom: 25px;
-  left: 10px;
 }
 
-
-input[type=text] {
-  height: 25px;
-  text-transform: uppercase;
-  width: 160px;
-  font-size: 14px;
-  margin-right: 5px;
-  box-shadow: 1px 1px 5px 1px grey;
-}
-
-input[type=text]:valid {
-  outline-color: green;
-}
 
 @media screen and (max-width: 640px) {
   .go-btn{

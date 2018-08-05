@@ -9,31 +9,29 @@ import { Apps } from '../../assests/projects';
 import * as locationActions from  '../../action/find-location';
 
 class Content extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      error: false,
-    };
-    // this.handleError = this.handleError.bind(this);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     error: false,
+  //   };
+  // }
 
 
   render() {
-    console.log('new test', Apps);
+    console.log('new test', Apps.Bingo);
     return (
       <div className="project-holder">
         <Project
-          title= 'Get The Flight Out'
-          app={Apps['GTFO']}
+          app={Apps.Bingo}
         />
         <Project
-          title= 'tic tac toe'
+          app={Apps.GTFO}
         />
         <Project
-          title= 'Weather for you'
+          app={Apps.Weather}
         />
         <Project
-          title= 'Bingo was his name O'
+          app={Apps.Tic}
         />
       </div>
     );

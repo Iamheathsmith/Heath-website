@@ -6,18 +6,13 @@ import * as locationActions from  '../../action/find-location';
 class Project extends React.Component {
 
   render() {
-    // console.log('this is a test', this.props.app.Image);
     return (
-      // <React.Fragment>
       <div className="project">
-        <h1 className="title">{this.props.title}</h1>
-        <div className="image">
-          <img  className='gif' src={this.props.app>Image}/>
-        </div>
+        <h1 className="title">{this.props.app.Name}</h1>
+        <img  className="image" src={this.props.app.Image}/>
 
         <div className="about-project">
           <h4>{this.props.app.Info}</h4>
-          <h4>{}</h4>
           <div className="tech">
             <h4>
               technology used:
@@ -28,7 +23,6 @@ class Project extends React.Component {
 
         <button className="btn">Check it out</button>
       </div>
-      // </React.Fragment>
     );
   }
 }
