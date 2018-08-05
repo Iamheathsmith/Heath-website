@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Sigmar+One');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Sigmar+One|Bungee|VT323');
 
 
 .about-project {
@@ -27,12 +27,16 @@
   position: absolute;
   bottom: 10px;
   right: 20px;
-  width: 150px;
-  height: 40px;
+  font-size: 14px;
+  color: white;
+  width: 100px;
+  height: 30px;
+  background-color: #31AFFF;
   border: 1px solid grey;
   border-radius: 3px;
   outline: none;
   transition: 100ms;
+  box-shadow: 1px 2px 9px 1px #afabab;
 }
 
 .tech {
@@ -41,8 +45,8 @@
 }
 
 .btn:hover {
-  background-color: red;
-  color: yellow;
+  background-color: #FFAF70;
+  color: rgb(39, 39, 79);
   border: 1px solid rgb(0, 58, 249);
 }
 
@@ -51,10 +55,31 @@
 }
 
 .title {
-  height: 0px;
   width: 100%;
   font-size: 30px;
-  margin: 10px 0px 0px 10px;
+  margin: 10px 0px 10px 10px;
+}
+
+.bingo-title, .tic-title, .weather-title, .GTFO-title {
+  width: 100%;
+  font-size: 30px;
+  margin: 10px 0px 10px 10px;
+}
+
+.bingo-title {
+  font-family: 'VT323', monospace;
+}
+
+.tic-title {
+  font-family: 'Bungee', cursive;
+}
+
+.weather-title {
+  font-family: 'Amatic SC', cursive;
+}
+
+.GTFO-title {
+  font-family: Raleway, Helvetica;
 }
 
 .image {
@@ -62,22 +87,60 @@
   width: 525px;
   height: 375px;
   float: left;
-  margin: 10px 10px 0px 20px;
+  margin: 10px 10px 10px 20px;
   box-shadow: 1px 2px 9px 1px #afabab;
 }
 
 
-@media screen and (max-width: 640px) {
-  .go-btn{
-    font-size: 13px;
-    font-family: 'Sigmar One', cursive;
-    display: block;
+@media screen and (max-width: 965px) {
+  .image {
+    justify-content: center;
+    width: 525px;
+    height: 375px;
     margin: 0 auto;
+    box-shadow: 1px 2px 9px 1px #afabab;
+  }
+
+  .project {
+    height: auto;
+  }
+
+  .about-project {
+    margin: 20px 10px;
+    height: auto;
+  }
+
+  .btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 100px;
     height: 30px;
+    border: 1px solid grey;
     border-radius: 3px;
     outline: none;
-    width: 120px;
-    float: none;
-    margin-top: 10px;
+    transition: 100ms;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .image {
+    justify-content: center;
+    width: 80vw;
+    height: 50vw;
+    margin: 0 auto;
+    box-shadow: 1px 2px 9px 1px #afabab;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  // .title {
+  //   width: 60%;
+  //   font-size: 30px;
+  //   margin: 10px 0px 10px 10px;
+  // }
+
+  .bingo-title, .tic-title, .weather-title, .GTFO-title {
+    width: 60%;
   }
 }

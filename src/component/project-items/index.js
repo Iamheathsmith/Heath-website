@@ -1,6 +1,7 @@
 import React from 'react';
 import './project-items.scss';
 import {connect} from 'react-redux';
+import { titleStyle } from '../../lib/utils';
 import * as locationActions from  '../../action/find-location';
 
 class Project extends React.Component {
@@ -8,7 +9,7 @@ class Project extends React.Component {
   render() {
     return (
       <div className="project">
-        <h1 className="title">{this.props.app.Name}</h1>
+        <h1 className={titleStyle(this.props.app.Name)}> - {this.props.app.Name}</h1>
         <img  className="image" src={this.props.app.Image}/>
 
         <div className="about-project">
@@ -21,7 +22,10 @@ class Project extends React.Component {
           </div>
         </div>
 
-        <button className="btn">Check it out</button>
+        <a href={this.props.app.Link}>
+          <button className="btn">Check it out</button>
+        </a>
+        {/* <button className="btn">Check it out</button> */}
       </div>
     );
   }
