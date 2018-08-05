@@ -2,10 +2,8 @@
 
 
 .about-project {
-  position: absolute;
-  top: 35px;
-  right: 10px;
-  width: 46vw;
+  margin-left: 330px;
+  margin-right: 10px;
   border: 3px solid #73AD21;
 }
 
@@ -13,7 +11,7 @@
   width: 90%;
   margin-bottom: 40px;
   border: 2px solid green;
-  height: 300px;
+  height: 320px;
   background-color: white;
   transition: 350ms;
   position: relative;
@@ -51,10 +49,15 @@
   margin: 10px;
 }
 
+.gif {
+  width: 300px;
+  height: 250px;
+}
+
 .image {
   position: absolute;
   box-shadow: 1px 2px 9px 1px #afabab;
-  bottom: 10px;
+  bottom: 25px;
   left: 10px;
 }
 

@@ -6,24 +6,23 @@ import * as locationActions from  '../../action/find-location';
 class Project extends React.Component {
 
   render() {
+    // console.log('this is a test', this.props.app.Image);
     return (
       // <React.Fragment>
       <div className="project">
         <h1 className="title">{this.props.title}</h1>
         <div className="image">
-          <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x250"/></a>
+          <img  className='gif' src={this.props.app>Image}/>
         </div>
 
         <div className="about-project">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla, velit sed sodales pulvinar, sem est rutrum metus, vel pulvinar nulla turpis quis diam. Nulla nec facilisis quam, sed lobortis justo. Nunc iaculis justo vel malesuada rhoncus. Aliquam at facilisis ipsum. Maecenas consectetur eu arcu nec congue. Praesent ultricies egestas feugiat. Nam quis nulla vel est vulputate molestie quis quis lorem.
-          </h4>
+          <h4>{this.props.app.Info}</h4>
+          <h4>{}</h4>
           <div className="tech">
             <h4>
               technology used:
             </h4>
-            <h5>
-              javaScript, React, redux, etc...
-            </h5>
+            <h5>{this.props.app.Tech}</h5>
           </div>
         </div>
 
