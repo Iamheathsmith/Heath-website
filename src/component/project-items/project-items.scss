@@ -5,6 +5,7 @@
   line-height: 16px;
   height: 330px;
   flex-grow: 100;
+  margin-top: 10px;
   display: inline-block;
   width: 33%;
   margin: 10px;
@@ -24,9 +25,29 @@
 }
 
 .btn {
+  width: 100%;
   position: absolute;
   bottom: 10px;
-  right: 20px;
+  right: 10px;
+}
+
+.btn-live {
+  margin-right: 10px;
+  float: right;
+  font-size: 14px;
+  color: white;
+  width: 100px;
+  height: 30px;
+  background-color: #31AFFF;
+  border: 1px solid grey;
+  border-radius: 3px;
+  outline: none;
+  transition: 100ms;
+  box-shadow: 1px 2px 9px 1px #afabab;
+}
+.btn-git{
+  float: right;
+  margin-right: 10px;
   font-size: 14px;
   color: white;
   width: 100px;
@@ -44,7 +65,7 @@
   outline: violet;
 }
 
-.btn:hover {
+.btn-live:hover, .btn-git:hover {
   background-color: #FFAF70;
   color: rgb(39, 39, 79);
   border: 1px solid rgb(0, 58, 249);
@@ -67,6 +88,7 @@
 }
 
 .bingo-title {
+  font-size: 36px;
   font-family: 'VT323', monospace;
 }
 
@@ -75,10 +97,12 @@
 }
 
 .weather-title {
+  font-size: 40px;
   font-family: 'Amatic SC', cursive;
 }
 
 .GTFO-title {
+  font-size: 28px;
   font-family: Raleway, Helvetica;
 }
 
@@ -98,6 +122,7 @@
     width: 525px;
     height: 375px;
     margin: 0 auto;
+    margin-bottom: 10px;
     box-shadow: 1px 2px 9px 1px #afabab;
   }
 
@@ -106,41 +131,25 @@
   }
 
   .about-project {
-    margin: 20px 10px;
     height: auto;
+    margin: 0px 10px 10px 10px;
   }
 
   .btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    width: 100px;
-    height: 30px;
-    border: 1px solid grey;
-    border-radius: 3px;
-    outline: none;
-    transition: 100ms;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
   }
 }
 
 @media screen and (max-width: 620px) {
   .image {
-    justify-content: center;
     width: 80vw;
     height: 50vw;
     margin: 0 auto;
+    margin-bottom: 10px;
+    justify-content: center;
     box-shadow: 1px 2px 9px 1px #afabab;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  // .title {
-  //   width: 60%;
-  //   font-size: 30px;
-  //   margin: 10px 0px 10px 10px;
-  // }
-
-  .bingo-title, .tic-title, .weather-title, .GTFO-title {
-    width: 60%;
   }
 }

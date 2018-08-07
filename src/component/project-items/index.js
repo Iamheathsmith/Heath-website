@@ -9,23 +9,27 @@ class Project extends React.Component {
   render() {
     return (
       <div className="project">
-        <h1 className={titleStyle(this.props.app.Name)}> - {this.props.app.Name}</h1>
-        <img  className="image" src={this.props.app.Image}/>
+        <h1 className={titleStyle(this.props.app.name)}>{this.props.app.name}</h1>
+        <img  className="image" src={this.props.app.image}/>
+
+        <div className="btn">
+          <a href={this.props.app.git}>
+            <button className="btn-git">GitHub</button>
+          </a>
+          <a href={this.props.app.link}>
+            <button className="btn-live">Live Site</button>
+          </a>
+        </div>
 
         <div className="about-project">
-          <h4>{this.props.app.Info}</h4>
+          <h4>{this.props.app.info}</h4>
           <div className="tech">
             <h4>
               technology used:
             </h4>
-            <h5>{this.props.app.Tech}</h5>
+            <h5>{this.props.app.tech}</h5>
           </div>
         </div>
-
-        <a href={this.props.app.Link}>
-          <button className="btn">Check it out</button>
-        </a>
-        {/* <button className="btn">Check it out</button> */}
       </div>
     );
   }

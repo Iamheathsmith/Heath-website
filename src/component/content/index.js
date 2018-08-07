@@ -18,7 +18,6 @@ class Content extends React.Component {
 
 
   render() {
-    console.log('new test', Apps.Bingo);
     return (
       <div className="project-holder">
         <Project
