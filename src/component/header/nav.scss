@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 
+header {
+  background-color: pink;
+}
+
 .header {
   height: 120px;
-  border-bottom: 2px solid;
   margin-bottom: 10px;
-  background-color: black;
+  display: inline-block;
 }
 
 .logo {

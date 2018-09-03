@@ -1,5 +1,5 @@
 
-import './content.scss';
+import './projects.scss';
 import Nav from '../nav';
 import React from 'react';
 import {connect} from 'react-redux';
@@ -8,15 +8,7 @@ import { renderIf } from '../../lib/utils';
 import { Apps } from '../../assests/projects';
 import * as locationActions from  '../../action/find-location';
 
-class Content extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     error: false,
-  //   };
-  // }
-
-
+class ProjectPage extends React.Component {
   render() {
     return (
       <div className="project-holder">
@@ -41,4 +33,4 @@ let mapStateToProps = state => ({
   location: state.location,
 });
 
-export default connect(mapStateToProps, null)(Content);
+export default connect(mapStateToProps, null)(ProjectPage);
