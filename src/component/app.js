@@ -6,14 +6,13 @@ import Header from './header/index';
 
 import About from './about/index';
 import Landing from './landing/index';
-import Photography from './landing/index';
 import ProjectPage from './projects/index';
+import Photography from './Photography/index';
 
 import { Provider } from 'react-redux';
 import createStore from '../lib/app-create-store';
 import {BrowserRouter, Route, Redirect} from 'react-router-dom';
 import Project from './project-items';
-
 
 const store = createStore();
 

@@ -7,8 +7,9 @@ import * as locationActions from  '../../action/find-location';
 class Project extends React.Component {
 
   render() {
+    console.log('asdfasdfasdfasfdasdf',this.props.app.name);
     return (
-      <div className="project">
+      <React.Fragment>
         <h1 className={titleStyle(this.props.app.name)}>{this.props.app.name}</h1>
         <img  className="image" src={this.props.app.image}/>
 
@@ -21,7 +22,7 @@ class Project extends React.Component {
           </a>
         </div>
 
-        <div className="about-project">
+        <div className="project-content">
           <h4>{this.props.app.info}</h4>
           <div className="tech">
             <h4>
@@ -30,18 +31,9 @@ class Project extends React.Component {
             <h5>{this.props.app.tech}</h5>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
 
-// let mapStateToProps = state => ({
-//   location: state.location,
-// });
-
-// const mapDispatchToProps = dispatch => ({
-//   addLocation : search => dispatch(locationActions.addLocationAction(search)),
-// });
-
-// export default connect(mapStateToProps, mapDispatchToProps)(Project);
 export default Project;

@@ -11,7 +11,7 @@ class Header extends React.Component {
         <div className="header">
           <h1 className="logo"> H </h1>
           <h3 className="name"> Heath A. Smith </h3>
-          <h3 className="saying"> Full stack software developer that wants to push the boundaries</h3>
+          {/* <h3 className="saying"> Full stack software developer that wants to push the boundaries</h3> */}
         </div>
 
         <Nav />
