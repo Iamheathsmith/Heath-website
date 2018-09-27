@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Sigmar+One|Bungee|VT323');
+
+.btn {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.btn-live {
+  margin-right: 10px;
+  float: right;
+  font-size: 14px;
+  color: white;
+  width: 100px;
+  height: 30px;
+  background-color: #31AFFF;
+  border: 1px solid grey;
+  border-radius: 3px;
+  outline: none;
+  transition: 100ms;
+  box-shadow: 1px 2px 9px 1px #afabab;
+}
+.btn-git{
+  float: right;
+  margin-right: 10px;
+  font-size: 14px;
+  color: white;
+  width: 100px;
+  height: 30px;
+  background-color: #31AFFF;
+  border: 1px solid grey;
+  border-radius: 3px;
+  outline: none;
+  transition: 100ms;
+  box-shadow: 1px 2px 9px 1px #afabab;
+}
+
+.tech {
+  margin-top: 10px;
+  outline: violet;
+}
+
+.btn-live:hover, .btn-git:hover {
+  background-color: #FFAF70;
+  color: rgb(39, 39, 79);
+  border: 1px solid rgb(0, 58, 249);
+}
+
+// @media screen and (max-width: 620px) {
+//   .image {
+//     width: 80vw;
+//     height: 50vw;
+//     margin: 0 auto;
+//     margin-bottom: 10px;
+//     justify-content: center;
+//     box-shadow: 1px 2px 9px 1px #afabab;
+//   }
+// }
+
+
+.ul-holder .li-item {
+  border-left: 5px solid rgb(72, 67, 67);
+  border-top: 2px solid rgb(72, 67, 67);
+  border-bottom: 2px solid rgb(72, 67, 67);
+  box-shadow: -8px 0 20px -6px black;
+  list-style: none;
+  position: relative;
+  width: 25%;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.ul-holder:hover .li-item {
+  width: 10%;
+}
+
+.ul-holder .li-item:hover {
+  width: 70%;
+}
+
+.ul-holder .li-item:nth-child(1) {
+  background-position: left;
+  transition: 0.5s;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%,rgba(255, 255, 255, 0.4) 100%),url('../../assests/images/covers/bingo.jpg');
+  background-size: cover;
+}
+
+.ul-holder .li-item:nth-child(2) {
+  background-position: left;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%,rgba(255, 255, 255, 0.4) 100%),url('../../assests/images/covers/tictac.png');
+  background-size: cover;
+}
+
+.ul-holder .li-item:nth-child(3) {
+  background-position: left;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%,rgba(255, 255, 255, 0.4) 100%),url('../../assests/images/covers/weather.jpg');
+  background-size: cover;
+}
+
+.ul-holder .li-item:nth-child(4) {
+  background-position: left;
+  border-right: 2px solid #484343;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%,rgba(255, 255, 255, 0.4) 100%),url('../../assests/images/covers/gtfo.jpg');
+  background-size: cover;
+}
+
+.ul-holder .li-item .project-content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: darkslategray;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.image {
+  opacity: 0;
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 525px;
+  height: 375px;
+  box-shadow: 1px 2px 9px 1px #afabab;
+}
+
+.ul-holder .li-item:hover .project-content {
+  bottom: 0;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+.ul-holder .li-item:hover .image {
+  transition: 0.5s;
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+.ul-holder .li-item:hover .btn {
+  transition: 0.5s;
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+.bingo-title, .tic-title, .weather-title, .GTFO-title {
+  transform: rotate(-90deg);
+  transform-origin: left;
+  margin-left: 40px;
+  margin-top: 300px;
+  width: 300px;
+  font-size: 36px;
+  transition: 0.5s;
+}
+
+.ul-holder .li-item:hover .bingo-title {
+  width: 65%;
+  margin: 10px;
+  transform: rotate(0deg);
+}
+
+.ul-holder .li-item:hover .tic-title {
+  width: 65%;
+  margin: 10px;
+  transform: rotate(0deg);
+}
+
+.ul-holder .li-item:hover .weather-title {
+  width: 65%;
+  margin: 10px;
+  transform: rotate(0deg);
+}
+
+.ul-holder .li-item:hover .GTFO-title {
+  width: 65%;
+  margin: 10px;
+  transform: rotate(0deg);
+}
+
+.bingo-title {
+  font-size: 36px;
+  font-family: 'VT323', monospace;
+}
+
+.tic-title {
+  font-family: 'Bungee', cursive;
+}
+
+.weather-title {
+  font-size: 40px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.GTFO-title {
+  font-size: 28px;
+  font-family: Raleway, Helvetica;
+}
+
+.btn {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 160px;
+  right: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .image {
+    margin-top: 20px;
+    width: 80%;
+    height: 45%;
+  }
+
+  .btn {
+    bottom: 220px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image {
+    height: 40vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btn {
+    zoom: 1;
+    right: 10px;
+    top: 275px;
+  }
+
+  .image {
+    height: 23vh;
+  }
+}
