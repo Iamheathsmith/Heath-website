@@ -1,6 +1,9 @@
 
 .container {
   position: relative;
+  top: 50px;
+  height: 100px;
+  // position: relative;
   display: flex;
   width: 90%;
   flex-direction: row;
@@ -11,6 +14,7 @@
 }
 
 .container .box {
+  box-shadow: 2px 2px 20px 3px #0000005e;
   position: relative;
   width: 30%;
   height: 90%;
@@ -21,6 +25,7 @@
 }
 
 .container .box .icon {
+  box-shadow: inset 0px 0px 10px 2px #0000005e;
   position: absolute;
   top: 0;
   left: 0;
@@ -40,27 +45,27 @@
 }
 
 .container .box:nth-child(1) .icon {
-  background: #319635;
+  background: #6f8c51;
 }
 
 .container .box:nth-child(1) {
-  background: #4caf50;
+  background: #698e43;
 }
 
 .container .box:nth-child(2) .icon {
-  background: #d03852;
+  background: #f2dc6d;
 }
 
 .container .box:nth-child(2) {
-  background: #f54967;
+  background: #e9d156;
 }
 
 .container .box:nth-child(3) .icon {
-  background: #23798e;
+  background: #6085a6;
 }
 
 .container .box:nth-child(3) {
-  background: #328faf;
+  background: #4e7ca4;
 }
 
 .container .box .icon .fa {
